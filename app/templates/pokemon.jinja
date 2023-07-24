@@ -1,0 +1,6 @@
+
+  <form action="{{ url_for('social.post') }}" method="POST">
+    {{ g.poke_form.hidden_tag() }}
+    <span>{{ g.poke_form.name() }}</span>
+    <p>{{ g.poke_form.submit() }}</p>
+  </form>

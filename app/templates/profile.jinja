@@ -1,0 +1,16 @@
+{%extends "base.jinja"%}
+
+{%block content%}
+<h2>{{username}}</h2>
+<main class = 'pokemons'>
+<ul>
+    {% for poke in pokemons %}
+   <h4>{{poke.name}}</h4>
+    <li>weight: {{poke.weight}}</li>
+    <li>height: {{poke.height}}</li>
+    {%endfor%}
+</ul>
+
+</main>
+
+{%endblock content%}
